@@ -8,12 +8,16 @@ The propensity model is designed as a web application, which can be used as a st
  
 The propensity model comprises of two products: a web application, created using RStudio’s “shiny” library along with the machine learning model, and another which includes the same model but is deployed in SQL Machine Learning services. The web application includes the creation of machine learning algorithm in RStudio, using the shiny library, to create a simple interface which uploads a dataset and downloads predictions. The Machine Learning model created in RStudio is deployed on Microsoft SQL server in terms of Stored Procedures. This allows RAB to either integrate the Stored Procedures with their pre-existing application or to use a web application to get quick results.
 
-# Web Application
-
-![image](https://user-images.githubusercontent.com/72771903/113711775-b53b9900-9728-11eb-8391-16d1e54bf43a.png)
-
 # Database
 
 Microsoft SQL server database is used to create and make predictions on the dummy dataset. Nevertheless, the propensity model is compatible with existing RAB database, which can be linked to the model created, but requires changes on the stored procedures and the model if changes in the database occurs. The propensity tool provides user interface which allows data uploading and downloading of predictions. It also allows users to export data from software tools like MS Excel, SharePoint and database as long as the file uploaded in the application is in csv file. However, this setting can always be altered for different file extensions. 
  
+The initial step in the database design was to undermine the data that would be collected and analyse via it. The database created on the local server is easy to setup on the client’s desktop environment. 
  
+For the purpose of managing the data and the respective tables, every table contains one field with unique values (row numbers) and is labelled as the primary key for the table. In order to simplify the usage of the system, any guest user is given the access to the database. However, this setting can be changed as the SQL machine learning services are used on the client’s pre-existing application, so it is flexible with the setting.  
+ 
+The propensity tool has searchable and sortable fields that can be used in reporting. For this reason, the field names are consistent with fields built in the web application, used in the algorithm and the database of the bank.
+
+# Web Application
+
+![image](https://user-images.githubusercontent.com/72771903/113711775-b53b9900-9728-11eb-8391-16d1e54bf43a.png)
