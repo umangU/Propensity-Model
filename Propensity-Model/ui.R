@@ -3,7 +3,7 @@ library(shiny)
 library(shinydashboard)
 library(shinythemes)
 
-# Defining the dashboard page
+# Dashboard page
 dashboardPage(skin="black",
               # Dashboard header and sidebar along with sidebar items are declared
               dashboardHeader(title=tags$em("Loan Defaulters", style="text-align:left;color:#006600;font-size:100%"),titleWidth = 800),
