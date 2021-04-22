@@ -81,7 +81,7 @@ shinyServer(function(input,output){
         # Assigning missing values 0
         input_data[is.na(input_data)] <- 0;
         
-        # storing the input dataset into other object
+        # Storing the input dataset into other object
         input_data_rm <- input_data;
         
         # Scaling the numerical columns to perform SVM
@@ -94,7 +94,7 @@ shinyServer(function(input,output){
                 "TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne","AppUsageThree","InternetUsageOne","InternetUsageThree",
                 "BranchVisitsSix","Age")])
         
-        # factoring the character columns to boolean
+        # Factoring the character columns to boolean
         input_data_rm$JointLoan <- ifelse(input_data_rm$JointLoan == "Yes", 1, 0)
         input_data_rm$LPI <- ifelse(input_data_rm$LPI == "Yes", 1, 0)
         input_data_rm$Gender <- ifelse(input_data_rm$Gender == "Male", 1, 0)
