@@ -18,7 +18,7 @@ loan[,c("LoanBalance","ArrearsBalance","ArrearsDays","RepaymentAmount","LVR",
         "TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne","AppUsageThree","InternetUsageOne","InternetUsageThree",
         "BranchVisitsSix","Age")])
 
-# factoring the character columns to Boolean
+# Factoring the character columns to Boolean
 loan$JointLoan <- ifelse(loan$JointLoan == "Yes", 1, 0)
 loan$LPI <- ifelse(loan$LPI == "Yes", 1, 0)
 loan$Gender <- ifelse(loan$Gender == "Male", 1, 0)
