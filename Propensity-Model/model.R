@@ -1,8 +1,8 @@
-#Importing libraries to read an excel file and perform support vector machines
+# Importing libraries to read an excel file and perform support vector machines
 library(readxl)
 library(e1071)
 
-#Reading the Dataset
+# Reading the Dataset
 loan  <- read.csv("dummy.csv")
 
 # Replacing missing values with 0 
@@ -30,7 +30,7 @@ loan <- loan[,-c(1,2,30)];
 # Storing the imported dataset into data frame
 loan_df <- as.data.frame(loan)
 
-#getting the number of rows from the dataset
+# getting the number of rows from the dataset
 rows <- nrow(loan)
 
 #partitioning the dataset into training and testing
