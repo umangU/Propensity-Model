@@ -1,4 +1,4 @@
-/*Show all instance configurations*/
+/* Show all instance configurations*/
 EXEC sp_configure
 
 /*Show external scripts enabled config value*/
