@@ -1,6 +1,6 @@
 ﻿USE [loan]
 GO
-/******Object:  Schema [db1]    Script Date: 9/30/2020 3:06:58 AM ******/
+/****** Object:  Schema [db1]    Script Date: 9/30/2020 3:06:58 AM ******/
 CREATE SCHEMA [db1]
 GO
 /****** Object:  Table [db1].[clients]    Script Date: 9/30/2020 3:06:58 AM ******/
