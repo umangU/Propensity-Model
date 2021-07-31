@@ -10,7 +10,7 @@ CREATE TABLE clients_loan_models
 );
 GO
 
--- Stored procedure that trains and generates an R model using the clients data and support vector machines
+--Stored procedure that trains and generates an R model using the clients data and support vector machines
 DROP PROCEDURE IF EXISTS generate_clients_loan_model;
 go
 CREATE PROCEDURE generate_clients_loan_model (@trained_model varbinary(max) OUTPUT)
