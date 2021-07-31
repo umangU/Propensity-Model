@@ -2,7 +2,7 @@ USE loan;
 
 DROP TABLE IF EXISTS clients_loan_models;
 GO
--- Declaring table to store trained model
+--Declaring table to store trained model
 CREATE TABLE clients_loan_models 
 (	
 	model_name VARCHAR(30) NOT NULL DEFAULT('default model') PRIMARY KEY,
@@ -51,7 +51,7 @@ END;
 GO
 
 
--- Saving model to table
+--Saving model to table
 TRUNCATE TABLE clients_loan_models;
 
 -- Executing Stored Procedure to generate trained model using SVM with polynomial kernel
