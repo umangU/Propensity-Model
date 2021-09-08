@@ -33,7 +33,7 @@ loan_df <- as.data.frame(loan)
 # getting the number of rows from the dataset
 rows <- nrow(loan)
 
-#partitioning the dataset into training and testing
+# Partitioning the dataset into training and testing
 ind <- sample(2, nrow(loan_df), replace = T, prob = c(0.8,0.2))
 train_data <- loan_df[ind==1, ]
 test_data <- loan_df[ind==2, ]
