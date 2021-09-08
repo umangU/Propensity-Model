@@ -1,4 +1,4 @@
-#Importing libraries to read an excel file and perform support vector machines
+# Importing libraries to read an excel file and perform support vector machines
 library(readxl)
 library(e1071)
 
