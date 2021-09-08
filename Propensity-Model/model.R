@@ -5,7 +5,7 @@ library(e1071)
 # Reading the Dataset
 loan  <- read.csv("dummy.csv")
 
-#Replacing missing values with 0 
+# Replacing missing values with 0 
 loan[is.na(loan)]<-0
 
 # Scaling the numerical columns to perform SVM
