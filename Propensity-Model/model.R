@@ -8,7 +8,7 @@ loan  <- read.csv("dummy.csv")
 # Replacing missing values with 0 
 loan[is.na(loan)]<-0
 
-# Scaling the numerical columns to perform SVM
+#Scaling the numerical columns to perform SVM
 loan[,c("LoanBalance","ArrearsBalance","ArrearsDays","RepaymentAmount","LVR",
         "SecurityValuation","RelationshipBalance","SavingsBalance","SavingsBalanceOne","SavingsBalanceThree","ArrearsBalanceOne",
         "ArrearsBalanceThree","ArrearsDaysOne","ArrearsDaysThree","TransactionQuantityOne","TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne",
@@ -18,7 +18,7 @@ loan[,c("LoanBalance","ArrearsBalance","ArrearsDays","RepaymentAmount","LVR",
         "TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne","AppUsageThree","InternetUsageOne","InternetUsageThree",
         "BranchVisitsSix","Age")])
 
-# Factoring the character columns to Boolean
+#Factoring the character columns to Boolean
 loan$JointLoan <- ifelse(loan$JointLoan == "Yes", 1, 0)
 loan$LPI <- ifelse(loan$LPI == "Yes", 1, 0)
 loan$Gender <- ifelse(loan$Gender == "Male", 1, 0)
