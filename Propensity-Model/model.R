@@ -8,7 +8,7 @@ loan  <- read.csv("dummy.csv")
 # Replacing missing values with 0 
 loan[is.na(loan)]<-0
 
-#Scaling the numerical columns to perform SVM
+# Scaling the numerical columns to perform SVM
 loan[,c("LoanBalance","ArrearsBalance","ArrearsDays","RepaymentAmount","LVR",
         "SecurityValuation","RelationshipBalance","SavingsBalance","SavingsBalanceOne","SavingsBalanceThree","ArrearsBalanceOne",
         "ArrearsBalanceThree","ArrearsDaysOne","ArrearsDaysThree","TransactionQuantityOne","TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne",
