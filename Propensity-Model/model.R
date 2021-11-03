@@ -2,7 +2,7 @@
 library(readxl)
 library(e1071)
 
-#Reading the Dataset
+# Reading the Dataset
 loan  <- read.csv("dummy.csv")
 
 # Replacing missing values with 0 
