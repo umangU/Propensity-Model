@@ -1,7 +1,7 @@
 /* Show all instance configurations*/
 EXEC sp_configure
 
-/*Show external scripts enabled config value*/
+/* Show external scripts enabled config value*/
 EXEC sp_configure 'external scripts enabled'
 
 /* Enable external scripts (if needed)*/
