@@ -8,7 +8,7 @@ loan  <- read.csv("dummy.csv")
 # Replacing missing values with 0 
 loan[is.na(loan)]<-0
 
-# Scaling the numerical columns to perform SVM
+#Scaling the numerical columns to perform SVM
 loan[,c("LoanBalance","ArrearsBalance","ArrearsDays","RepaymentAmount","LVR",
         "SecurityValuation","RelationshipBalance","SavingsBalance","SavingsBalanceOne","SavingsBalanceThree","ArrearsBalanceOne",
         "ArrearsBalanceThree","ArrearsDaysOne","ArrearsDaysThree","TransactionQuantityOne","TransactionValueOne","TransactionQuantityThree","TransactionValueThree","AppUsageOne",
@@ -24,7 +24,7 @@ loan$LPI <- ifelse(loan$LPI == "Yes", 1, 0)
 loan$Gender <- ifelse(loan$Gender == "Male", 1, 0)
 loan$DefaultOccurred <- ifelse(loan$DefaultOccurred == "Yes", 1, 0)
 
-#Removing the first name, last name and residential postcode columns
+# Removing the first name, last name and residential postcode columns
 loan <- loan[,-c(1,2,30)];
 
 # Storing the imported dataset into data frame
