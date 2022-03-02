@@ -8,7 +8,7 @@ EXEC sp_configure 'external scripts enabled'
 EXEC sp_configure 'external scripts enabled', 1
 RECONFIGURE WITH OVERRIDE
 
-/* Verify R is enabled*/
+/*Verify R is enabled*/
 EXEC sp_execute_external_script
 	@language=N'R',
 	@script=N'OutputDataSet <- InputDataSet;',
