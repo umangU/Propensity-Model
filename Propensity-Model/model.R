@@ -24,7 +24,7 @@ loan$LPI <- ifelse(loan$LPI == "Yes", 1, 0)
 loan$Gender <- ifelse(loan$Gender == "Male", 1, 0)
 loan$DefaultOccurred <- ifelse(loan$DefaultOccurred == "Yes", 1, 0)
 
-#Removing the first name, last name and residential postcode columns
+# Removing the first name, last name and residential postcode columns
 loan <- loan[,-c(1,2,30)];
 
 # Storing the imported dataset into data frame
