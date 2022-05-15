@@ -2,7 +2,7 @@ USE loan;
 
 DROP TABLE IF EXISTS clients_loan_models;
 GO
--- Declaring table to store trained model
+--Declaring table to store trained model
 CREATE TABLE clients_loan_models 
 (	
 	model_name VARCHAR(30) NOT NULL DEFAULT('default model') PRIMARY KEY,
@@ -10,7 +10,7 @@ CREATE TABLE clients_loan_models
 );
 GO
 
--- Stored procedure that trains and generates an R model using the clients data and support vector machines
+--Stored procedure that trains and generates an R model using the clients data and support vector machines
 DROP PROCEDURE IF EXISTS generate_clients_loan_model;
 go
 CREATE PROCEDURE generate_clients_loan_model (@trained_model varbinary(max) OUTPUT)
