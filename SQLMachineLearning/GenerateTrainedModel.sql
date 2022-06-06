@@ -51,10 +51,10 @@ END;
 GO
 
 
--- Saving model to table
+--Saving model to table
 TRUNCATE TABLE clients_loan_models;
 
--- Executing Stored Procedure to generate trained model using SVM with polynomial kernel
+--Executing Stored Procedure to generate trained model using SVM with polynomial kernel
 DECLARE @model VARBINARY(MAX);
 EXEC generate_clients_loan_model @model OUTPUT;
 
